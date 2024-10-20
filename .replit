@@ -1,7 +1,7 @@
 modules = ["nodejs-22"]
-run = "node 1-Fib.js"
+run = "node 2-Search.js"
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "node 1-Fib.js"]
+run = ["sh", "-c", "node 2-Search.js"]

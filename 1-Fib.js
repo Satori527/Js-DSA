@@ -1,5 +1,3 @@
-optFibonacci(1);
-optFibonacci(10);
 
 function optFibonacci(n) {
   const fib = [0, 1];
@@ -30,4 +28,13 @@ function myFibonacci(n) {
     console.log(n2, " ");
   }
   return;
+}
+
+function recFibonacci(n) {
+  if (n === 1) {
+    return 0;
+  } else if (n === 2) {
+    return 1;
+  }
+  return recFibonacci(n - 1) + recFibonacci(n - 2);
 }
